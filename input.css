@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.btn {
+		@apply px-5 py-2 bg-brightRed text-white rounded-full hover:bg-brightRedLight;
+	}
+}
+
+#nav-items.active {
+	height: 50vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 3rem;
+	right: -2.5rem;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	background: hsl(233, 17%, 98%);
+}
+
+.active * {
+	margin: 0.8rem auto;
+}
+
+#hamburger {
+	cursor: pointer;
+	transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.open :nth-child(1) {
+	transform: rotate(45deg) translate(5px, 9px);
+}
+
+.open :nth-child(2) {
+	transform: translate(-100%);
+	background-color: transparent;
+}
+
+.open :nth-child(3) {
+	transform: rotate(-45deg) translate(3px, -6px);
+}
