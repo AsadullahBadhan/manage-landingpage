@@ -57,6 +57,10 @@ body {
 	transform: rotate(-45deg) translate(3px, -6px);
 }
 
+.active {
+	background-color: hsl(233, 12%, 13%);
+}
+
 @media (max-width: 480px) {
 	body {
 		background-position: -40% -5%;

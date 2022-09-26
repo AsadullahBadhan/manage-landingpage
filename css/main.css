@@ -655,6 +655,10 @@ video {
   display: block;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }
@@ -671,12 +675,20 @@ video {
   height: 3.5rem;
 }
 
+.h-2 {
+  height: 0.5rem;
+}
+
 .h-8 {
   height: 2rem;
 }
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-2 {
+  width: 0.5rem;
 }
 
 .max-w-md {
@@ -689,6 +701,10 @@ video {
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .flex-col {
@@ -741,10 +757,10 @@ video {
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-y-16 > :not([hidden]) ~ :not([hidden]) {
+.space-y-10 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
-  margin-top: calc(4rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(4rem * var(--tw-space-y-reverse));
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
@@ -757,6 +773,12 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-32 > :not([hidden]) ~ :not([hidden]) {
@@ -808,6 +830,11 @@ video {
 .bg-gray-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+
+.bg-darkGrayishBlue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(227 12% 61% / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -969,6 +996,10 @@ body {
   transform: rotate(-45deg) translate(3px, -6px);
 }
 
+.active {
+  background-color: hsl(233, 12%, 13%);
+}
+
 @media (max-width: 480px) {
   body {
     background-position: -40% -5%;
@@ -978,6 +1009,11 @@ body {
   #cta {
     background-image: url(../img/bg-simplify-section-mobile.svg);
   }
+}
+
+.hover\:bg-veryDarkBlue:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(233 12% 13% / var(--tw-bg-opacity));
 }
 
 .hover\:bg-black:hover {
@@ -1070,24 +1106,6 @@ body {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
-  }
-
-  .md\:space-y-4 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-  }
-
-  .md\:space-y-8 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(2rem * var(--tw-space-y-reverse));
-  }
-
-  .md\:space-y-16 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(4rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(4rem * var(--tw-space-y-reverse));
   }
 
   .md\:bg-transparent {
