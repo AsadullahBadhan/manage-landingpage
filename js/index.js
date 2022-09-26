@@ -8,8 +8,8 @@ hamburger.addEventListener('click', function (e) {
   console.log(navItems)
 })
 
+//slider
 let slideIndex = 1;
-showSlides(slideIndex)
 
 //dots functionality
 function currentSlide(index) {
@@ -30,6 +30,8 @@ function showSlides(index) {
   dots[slideIndex - 1].className += ' active';
 }
 
-setInterval(() => {
-  showSlides(slideIndex += 1)
-}, 3000)
+if (window.innerWidth <= 768) {
+  setInterval(() => {
+    showSlides(slideIndex += 1);
+  }, 3000)
+}
